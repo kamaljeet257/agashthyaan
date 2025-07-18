@@ -211,17 +211,6 @@ header{
       padding: 30px;
     }
 
-    /* .tag { */
-      /* display: inline-block; */
-      /* padding: 8px 20px; */
-      /* background-color: white; */
-      /* color:var(--bs-teal); */
-      /* font-weight: 500; */
-      /* border-radius: 10px; */
-      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
-      /* align-self: center; */
-    /* } */
-
     .heading {
       font-size: 2rem;
       font-weight: bold;
@@ -296,7 +285,6 @@ header{
 
 .read_more {
   margin-top: 20px;
-  color: var(--bs-teal);
   font-weight: bold;
   display: inline-flex;
   align-items: center;
@@ -311,7 +299,7 @@ header{
   height: 100%;
   background-color: var(--bf-orange);
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: left-right;
   transition: transform 0.3s ease;
   z-index: 0;
 }
@@ -323,13 +311,15 @@ header{
 
 .read_more a{
   text-decoration: none;
-  color: var(--bs-teal);
+  color: var(--bs-cyan);
 }
+
 
 .read_more::after {
   content: "→";
   display: inline-block;
   transition: transform 0.3s;
+  color: var(--bs-cyan);
 }
 
 .card:hover .read_more::after {
