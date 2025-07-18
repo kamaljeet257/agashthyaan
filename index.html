@@ -6,23 +6,27 @@
   <title>Agasthyaan</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="./assets/images/short_logo.png"/>
 </head>
 <body>
  <header>
      <div class="container">
         <div class="row">
-                <nav class="navbar">
-                    <div class="logo">AGASTYAAN</div>
-                    <input type="checkbox" id="menu-toggle">
-                    <label class="menu-toggle" for="menu-toggle">&#9776;</label>
-                    <ul class="nav-links" id="nav_links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Protofolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/logoagast.png" alt="not logo img">
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label class="menu-toggle" for="menu-toggle">&#9776;</label>
+                <ul class="nav-links" id="nav_links">
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="./about.php">About</a></li>
+                    <li><a href="./services.php">Services</a></li>
+                    <li><a href="./portfolio.php">Protofolio</a></li>
+                    <li><a href="./contact.php">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
  </header>
@@ -30,12 +34,13 @@
     <div class="hero_container">
         <div class="hero_row">
             <div class="hero_col">
-                <div class="hero_content">
+                <div class="hero_content" data-aos="fade-up"
+     data-aos-duration="3000">
                     <h1>MODERN IT & TECH SERVICE SOLUTIONS</h1>
                     <p>
                         Agasthyaan Software builds modern, engaging, and high-performing websites. Our expert team empowers businesses with creative design and result-driven development to fuel digital growth.
                     </p>
-                    <span><a href="">Contact Us</a></span>
+                    <span><a href="./contact.php">Contact Us</a></span>
                 </div>
                 <div class="hero_content_img">
                     <img class="object" src="./assets/images/hero_img.webp" alt="not find img">
@@ -48,40 +53,43 @@
     <div class="service_container">
         <div class="service_row">
             <div class="content">
-                <div class="tag">Featured Services</div>
-                <div class="heading">
+                <!-- <div class="tag" data-aos="fade-up"
+     data-aos-duration="3000">Services</div> -->
+                <div class="heading" data-aos="fade-up"
+     data-aos-duration="3000">
                     Agasthyaan Provide Best <span>IT Solutions</span>
                 </div>
-                <div class="description">
+                <div class="description" data-aos="fade-up"
+     data-aos-duration="3000">
                     Completely strategize client-centric niche markets for go forward plat<br>
                     Phosfluorescently iterate efficient internal organic.
                 </div>
             </div>
         </div>
-        <div class="service_row">
+        <div class="service_row                ">
             <div class="card">
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <div class="icon">💻</div>
+                    <div class="icon"><img src="./assets/images/web-development.png" alt=""></div>
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
+                    <p>Custom websites with HTML, PHP, Laravel, and WordPress.</p>
                     <div class="read_more"><a href="#">Read More</a></div>
                 </div>
             </div>
             <div class="card">
             <div class="overlay"></div>
                 <div class="card_content">
-                    <div class="icon">🧠</div>
-                    <h3>Digital Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
+                    <div class="icon"><img src="./assets/images/app-development.png" alt=""></div>
+                    <h3>App Development</h3>
+                    <p>Custom apps with react-native, flutter, dart, php.</p>
                     <div class="read_more"><a href="#">Read More</a></div>
                 </div>
             </div>
             <div class="card">
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <div class="icon">🌐</div>
-                    <h3>SaaS Products</h3>
+                    <div class="icon"><img src="./assets/images/software-development.png" alt=""></div>
+                    <h3>Software Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
                     <div class="read_more"><a href="#">Read More</a></div>
                 </div>
@@ -90,8 +98,17 @@
             <div class="card">
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <div class="icon">🌐</div>
-                    <h3>SaaS Products</h3>
+                    <div class="icon"><img src="./assets/images/data.png" alt=""></div>
+                    <h3>SEO Optimization</h3>
+                    <div><p>Improve your Google rankings and website traffic.</p></div>
+                    <div class="read_more"><a href="#">Read More</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="overlay"></div>
+                <div class="card_content">
+                    <div class="icon"><img src="./assets/images/ui.png" alt=""></div>
+                    <h3>UI/UX design & development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
                     <div class="read_more"><a href="#">Read More</a></div>
                 </div>
@@ -99,17 +116,8 @@
             <div class="card">
                 <div class="overlay"></div>
                 <div class="card_content">
-                    <div class="icon">🌐</div>
-                    <h3>SaaS Products</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
-                    <div class="read_more"><a href="#">Read More</a></div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="overlay"></div>
-                <div class="card_content">
-                    <div class="icon">🌐</div>
-                    <h3>SaaS Products</h3>
+                    <div class="icon"><img src="./assets/images/security.png" alt=""></div>
+                    <h3>Cyber Security</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima.</p>
                     <div class="read_more"><a href="#">Read More</a></div>
                 </div>
@@ -121,9 +129,10 @@
     <div class="container_hightlites">
         <div class="hightlites_row">
             <div class="image_box">
-                <img class="object" src="./assets/images/hero-img.webp" alt="not image found" />
+                <img class="object" src="./assets/images/languages.avif" alt="not image found" />
             </div>
-            <div class="text_box">
+            <div class="text_box" data-aos="fade-up"
+     data-aos-duration="3000">
                 <div class="heading">The Best IT Solution Since <span class="highlight">2015</span></div>
                 <p>Although, the road to success in IT is never easy. We provide top-notch digital services to grow your business.</p>
                 <a href="#">Join Now</a>
@@ -131,7 +140,75 @@
         </div>
     </div>
 </section>
- </body>
+<section id="support">
+    <div class="deal_services_container">
+      <div class="deal_row">
+        <div class="deal_box" data-aos="fade-up"
+     data-aos-duration="3000">
+        <div class="heading">We Deal With The Aspects Of<span class="highlight">IT Services</span></div>
+        <div class="deal_cards">
+          <div class="deal_card">Worldwide Service</div>
+          <div class="deal_card">Support 12/7</div>
+          <div class="deal_card">Easy To Reach</div>
+          <div class="deal_card">First On Field</div>
+        </div>
+      </div>
+      <div class="deal_image_box">
+        <img src="./assets/images/person.jpg" alt="Services" />
+      </div>
+      </div>
+    </div>
+</section>
+ <footer class="footer">
+  <div class="footer_container">
+    <div class="footer_box">
+      <h2 class="logo"><img src="./assets/images/_logo.webp" alt="not"></h2>
+      <p style="color: #bbb;">Lorem Ipsum Dolor Sit Amet Aspernatur Exercitationem Fugiat.</p>
+      <h3>Follow</h3>
+      <div class="social_icons">
+        <a href="#"><i class="fab fa-facebook-f facebook-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram instagram-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin linkedin-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter twitter-icon "></i></a>
+      </div>
+    </div>
+
+    <div class="footer_box">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_box">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">X</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_box">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="#">Digital Marketing</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Cyber Security</a></li>
+        <li><a href="#">Graphic Design</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <p>© 2025 Agasthyaan: <span></span></p>
+    <p><a href="#">Terms Of Use</a> | <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+</body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
